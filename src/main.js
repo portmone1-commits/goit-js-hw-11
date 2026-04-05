@@ -17,8 +17,8 @@ form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
 
-  const form = event.currentTarget;
-  const query = form.elements['search-text'].value.trim();
+  const searchForm = event.currentTarget;
+  const query = searchForm.elements['search-text'].value.trim();
 
   if (!query) {
     iziToast.warning({
@@ -55,6 +55,6 @@ function handleSubmit(event) {
     })
     .finally(() => {
       hideLoader();
-      form.reset();
+      searchForm.reset();
     });
 }
