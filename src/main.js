@@ -1,7 +1,7 @@
 import './css/styles.css';
+import 'loaders.css/loaders.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import 'loaders.css/loaders.min.css';
 import { getImagesByQuery } from './js/pixabay-api';
 import {
   createGallery,
